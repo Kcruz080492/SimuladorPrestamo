@@ -1,0 +1,23 @@
+{
+  "name": "prestamos-sencillos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "check": "tsc --noEmit",
+    "s23": "tsc avances/s23.ts --target ES2022 --module ESNext --strict --skipLibCheck --outDir salida && node salida/s23.js",
+    "s24": "tsc avances/s24.ts --target ES2022 --module ESNext --strict --skipLibCheck --outDir salida && node salida/s24.js",
+    "s25": "tsc avances/s25.ts --target ES2022 --module ESNext --strict --skipLibCheck --outDir salida && node salida/s25.js",
+    "s26": "vite avances/s26 --host 127.0.0.1",
+    "s27": "vite avances/s27 --host 127.0.0.1",
+    "s28": "vite avances/s28 --host 127.0.0.1",
+    "s29": "vite avances/s29 --host 127.0.0.1",
+    "s30": "vite avances/s30 --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
+  }
+}

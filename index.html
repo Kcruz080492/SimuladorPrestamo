@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UNIVO · Simulador de Préstamos de Laboratorio</title>
+    <link rel="stylesheet" href="/style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!-- HEADER INSTITUCIONAL -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-brand">
+                <div class="header-logo-badge">
+                    <img src="https://res.cloudinary.com/dqstycwjr/image/upload/v1771453074/logo_tm7pcl.png" alt="Sello Oficial Universidad de Oriente UNIVO">
+                </div>
+                <div class="header-titles">
+                    <span class="header-univ-name">Universidad de Oriente</span>
+                    <span class="header-faculty">Facultad de Ingeniería y Arquitectura</span>
+                </div>
+            </div>
+            <div class="header-badge">
+                Carrera de Ingeniería de Software
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div>
+                <span class="hero-tag">Laboratorio de Tecnología</span>
+                <h1 class="hero-title">Simulador de Préstamos de Equipos</h1>
+                <p class="hero-description">
+                    Plataforma didáctica de gestión y control de inventario para estudiantes de primer año. Experimenta el flujo de asignación, disponibilidad y retorno de insumos informáticos en tiempo real.
+                </p>
+            </div>
+            <div class="hero-branding-art">
+                <img class="hero-univo-wordmark" src="https://res.cloudinary.com/dqstycwjr/image/upload/v1793201843/Recurso_10_ecicbj.png" alt="UNIVO">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="app-body">
+        <main class="main-card">
+            <div class="card-header-bar">
+                <span class="card-header-title">Panel de Control de Préstamos</span>
+                <span class="course-chip">Asignatura: Programación Estructurada</span>
+            </div>
+
+            <div class="card-content">
+                <div class="workspace-grid">
+                    <!-- PANEL DE ACCIONES -->
+                    <div class="panel">
+                        <h2 class="panel-heading">Gestionar Préstamo</h2>
+
+                        <div class="field-group">
+                            <label for="recurso">Selecciona un recurso del catálogo</label>
+                            <select id="recurso">
+                                <option value="">Selecciona una opción</option>
+                            </select>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="button" id="prestar">Prestar una unidad</button>
+                            <button type="button" id="devolver">Devolver una unidad</button>
+                        </div>
+
+                        <div class="field-group">
+                            <label>Estado de la operación</label>
+                            <p id="mensaje" role="status" aria-live="polite">Selecciona un recurso para comenzar.</p>
+                        </div>
+                    </div>
+
+                    <!-- PANEL DE TABLA Y BÚSQUEDA -->
+                    <div class="panel">
+                        <h2 class="panel-heading">Inventario del Laboratorio</h2>
+
+                        <div class="table-toolbar">
+                            <div class="field-group">
+                                <label for="buscar">Filtrar catálogo por nombre</label>
+                                <input id="buscar" type="search" placeholder="Ej. Cable, HDMI, Proyector...">
+                            </div>
+
+                            <div class="tabla">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Recurso</th>
+                                            <th>Total</th>
+                                            <th>Disponibles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="lista"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NOTA TÉCNICA -->
+                <footer class="simulator-notice">
+                    <span><strong>Entorno de Práctica:</strong> Cada acción actualiza los contadores en memoria. Recargar el navegador restablece los valores iniciales.</span>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-logo-row">
+                        <img src="https://res.cloudinary.com/dqstycwjr/image/upload/v1771453074/logo_tm7pcl.png" alt="UNIVO" class="footer-logo-img">
+                        <span class="footer-univ-title">Universidad de Oriente (UNIVO)</span>
+                    </div>
+                    <p class="footer-brand-desc">
+                        Comprometidos con la formación integral e innovadora en tecnología y desarrollo de software para el liderazgo profesional.
+                    </p>
+                </div>
+
+                <div class="footer-meta-col">
+                    <h4>Área Académica</h4>
+                    <p>Ingeniería de Software</p>
+                    <p>Programación Estructurada</p>
+                    <p>Laboratorio de Computación</p>
+                </div>
+
+                <div class="footer-meta-col">
+                    <h4>Información</h4>
+                    <a>San Miguel, El Salvador</a>
+                    <a>Ciclo Académico 02-2026</a>
+                    <a>Edición Estudiantil</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© Universidad de Oriente · Todos los derechos reservados</span>
+                <span>Autora del proyecto: <span class="footer-author-tag">Ing. Karla Cruz</span></span>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/main.ts"></script>
+</body>
+
+</html>
